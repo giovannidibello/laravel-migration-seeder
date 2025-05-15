@@ -7,12 +7,14 @@
     <title>Header</title>
 </head>
 <body>
+
+    <header class="p-4 mb-4 text-center text-white bg-dark">
     <div class="container">
         
-        <h1>Header pagina</h1>
+        <h1>Trains Laravel</h1>
 
     </div>
-    
+    </header>    
     
 </body>
 </html>
