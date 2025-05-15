@@ -1,6 +1,6 @@
 # 🚆 Laravel Train Board
 
-Un progetto Laravel che mostra una tabella dei treni in partenza dalla data odierna in avanti, utilizzando Migrations, Eloquent Model, Blade e Bootstrap.
+Un progetto Laravel che mostra una tabella dei treni in partenza dalla data odierna in avanti, utilizzando Migrations, Eloquent Model, Blade, Seeder e Bootstrap.
 
 ---
 
@@ -23,6 +23,19 @@ Creare una tabella `trains` e la relativa Migration, con i seguenti campi per og
 - Se cancellato o meno
 
 ---
+
+## 🌱 Seeder
+
+Sono stati utilizzati i **Seeder** per popolare la tabella `trains` con dati fittizi realistici.
+
+### Dettagli del seeder:
+
+- Uso di **Faker** per generare dati casuali ma coerenti
+- Compagnie simulate: `Trenitalia`, `Italo`
+- Città reali come stazioni (es. Napoli Centrale, Milano Centrale, Roma Termini, ecc.)
+- Il treno non può partire e arrivare nella stessa città
+- Orari generati dinamicamente rispetto alla data corrente
+- Campi booleani per ritardo o cancellazione gestiti randomicamente
 
 ## 🖥️ Output
 
@@ -58,5 +71,5 @@ Ogni treno viene visualizzato in una riga della tabella con:
 - PHP 8.1+
 - Composer
 - MySQL
-- Laravel 11
+- Laravel 12
 
