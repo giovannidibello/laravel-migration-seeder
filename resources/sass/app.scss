@@ -6,3 +6,48 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+
+body {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+// Table
+
+.departure-board {
+    background-color: #000;
+    color: #ffc107;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.departure-board th,
+.departure-board td {
+    padding: 8px;
+    text-align: center;
+}
+
+.departure-board th {
+    background-color: #333;
+    color: #fff;
+}
+
+.departure-board .highlight {
+    font-weight: 900;
+}
+
+// Animazione per ritardo treno
+
+.blink {
+    animation: blink-animation 2s steps(2, start) infinite;
+}
+
+/* Definizione dell'animazione */
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
